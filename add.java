@@ -9,6 +9,6 @@ int Firstnumber=myobj.nextInt();
 System.out.println("enter 2nd number:");
 int Secondnumber=myobj.nextInt();
 System.out.println("Firstnumber:"+Firstnumber);
-System.out.println("Secondnumber:"+Secondnumber);
+System.out.print("Secondnumber:"+Secondnumber);
 }
 }
