@@ -1,13 +1,22 @@
-
-class Add
+class PrimeNumbers 
 {
-public static void main(String args[])
+public static void main(String[] args) 
 {
-System.out.println("enter 1st number:10");
-int Firstnumber=myobj.nextInt();
-System.out.println("enter 2nd number:10");
-int Secondnumber=myobj.nextInt();
-System.out.println("Firstnumber:"+Firstnumber);
-System.out.print("Secondnumber:"+Secondnumber);
+int limit = 100;
+System.out.println("Prime numbers between 1 and " + limit);
+for(int i=1; i < 100; i++)
+{
+boolean isPrime = true;
+for(int j=2; j < i ; j++)
+{
+if(i % j == 0)
+{
+isPrime = false;
+break;
+}
+}
+if(isPrime)
+System.out.print(i + " ");
+}
 }
 }
